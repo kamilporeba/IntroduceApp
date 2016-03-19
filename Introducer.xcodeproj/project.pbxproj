@@ -14,6 +14,9 @@
 		BF1DC1B41C9DEA110056F7BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF1DC1B21C9DEA110056F7BE /* LaunchScreen.storyboard */; };
 		BF1DC1C31C9DEA740056F7BE /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1DC1C21C9DEA740056F7BE /* SignInViewController.swift */; };
 		BFF6A7271C9DF40800D0BE3B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6A7261C9DF40800D0BE3B /* RegisterViewController.swift */; };
+		BFF6A7291C9DF87600D0BE3B /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6A7281C9DF87600D0BE3B /* Global.swift */; };
+		BFF6A7301C9DF94C00D0BE3B /* RegisterValidationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6A72F1C9DF94C00D0BE3B /* RegisterValidationHelper.swift */; };
+		BFF6A7321C9DF98C00D0BE3B /* String+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6A7311C9DF98C00D0BE3B /* String+Validation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		BF1DC1B51C9DEA110056F7BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF1DC1C21C9DEA740056F7BE /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = SignIn/SignInViewController.swift; sourceTree = "<group>"; };
 		BFF6A7261C9DF40800D0BE3B /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = Register/RegisterViewController.swift; sourceTree = "<group>"; };
+		BFF6A7281C9DF87600D0BE3B /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		BFF6A72F1C9DF94C00D0BE3B /* RegisterValidationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterValidationHelper.swift; path = Register/Helpers/RegisterValidationHelper.swift; sourceTree = "<group>"; };
+		BFF6A7311C9DF98C00D0BE3B /* String+Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Validation.swift"; path = "Utils/Extensions/String+Validation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,7 @@
 				BF1DC1B01C9DEA110056F7BE /* Assets.xcassets */,
 				BF1DC1B21C9DEA110056F7BE /* LaunchScreen.storyboard */,
 				BF1DC1B51C9DEA110056F7BE /* Info.plist */,
+				BFF6A7281C9DF87600D0BE3B /* Global.swift */,
 			);
 			path = Introducer;
 			sourceTree = "<group>";
@@ -129,6 +136,7 @@
 		BF1DC1BF1C9DEA4E0056F7BE /* Extenions */ = {
 			isa = PBXGroup;
 			children = (
+				BFF6A7311C9DF98C00D0BE3B /* String+Validation.swift */,
 			);
 			name = Extenions;
 			sourceTree = "<group>";
@@ -150,6 +158,7 @@
 		BFF6A7231C9DF3EA00D0BE3B /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				BFF6A72A1C9DF8F000D0BE3B /* Helpers */,
 				BFF6A7261C9DF40800D0BE3B /* RegisterViewController.swift */,
 			);
 			name = Register;
@@ -161,6 +170,14 @@
 				BF1DC1C21C9DEA740056F7BE /* SignInViewController.swift */,
 			);
 			name = SignIn;
+			sourceTree = "<group>";
+		};
+		BFF6A72A1C9DF8F000D0BE3B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BFF6A72F1C9DF94C00D0BE3B /* RegisterValidationHelper.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,7 +316,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFF6A7291C9DF87600D0BE3B /* Global.swift in Sources */,
 				BFF6A7271C9DF40800D0BE3B /* RegisterViewController.swift in Sources */,
+				BFF6A7301C9DF94C00D0BE3B /* RegisterValidationHelper.swift in Sources */,
+				BFF6A7321C9DF98C00D0BE3B /* String+Validation.swift in Sources */,
 				BF1DC1C31C9DEA740056F7BE /* SignInViewController.swift in Sources */,
 				BF1DC1AA1C9DEA110056F7BE /* AppDelegate.swift in Sources */,
 			);

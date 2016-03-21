@@ -18,6 +18,9 @@
 		BFF6A7301C9DF94C00D0BE3B /* RegisterValidationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6A72F1C9DF94C00D0BE3B /* RegisterValidationHelper.swift */; };
 		BFF6A7321C9DF98C00D0BE3B /* String+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6A7311C9DF98C00D0BE3B /* String+Validation.swift */; };
 		BFF6A7351C9FF87800D0BE3B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6A7341C9FF87800D0BE3B /* MapViewController.swift */; };
+		BFF6A7381C9FFDE600D0BE3B /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6A7371C9FFDE600D0BE3B /* ListViewController.swift */; };
+		BFF6A73A1CA0037C00D0BE3B /* CityEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6A7391CA0037C00D0BE3B /* CityEntity.swift */; };
+		BFF6A73C1CA0051F00D0BE3B /* GetCitiesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6A73B1CA0051F00D0BE3B /* GetCitiesList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		BFF6A72F1C9DF94C00D0BE3B /* RegisterValidationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterValidationHelper.swift; path = Register/Helpers/RegisterValidationHelper.swift; sourceTree = "<group>"; };
 		BFF6A7311C9DF98C00D0BE3B /* String+Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Validation.swift"; path = "Utils/Extensions/String+Validation.swift"; sourceTree = "<group>"; };
 		BFF6A7341C9FF87800D0BE3B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = Map/MapViewController.swift; sourceTree = "<group>"; };
+		BFF6A7371C9FFDE600D0BE3B /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListViewController.swift; path = List/ListViewController.swift; sourceTree = "<group>"; };
+		BFF6A7391CA0037C00D0BE3B /* CityEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CityEntity.swift; path = Entities/CityEntity.swift; sourceTree = "<group>"; };
+		BFF6A73B1CA0051F00D0BE3B /* GetCitiesList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetCitiesList.swift; path = API/GetCitiesList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,7 @@
 		BF1DC1BB1C9DEA360056F7BE /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BFF6A7361C9FFDD400D0BE3B /* List */,
 				BFF6A7331C9FF84E00D0BE3B /* Map */,
 				BFF6A7241C9DF3EE00D0BE3B /* SignIn */,
 				BFF6A7231C9DF3EA00D0BE3B /* Register */,
@@ -147,6 +154,7 @@
 		BF1DC1C01C9DEA540056F7BE /* API */ = {
 			isa = PBXGroup;
 			children = (
+				BFF6A73B1CA0051F00D0BE3B /* GetCitiesList.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -154,6 +162,7 @@
 		BF1DC1C11C9DEA5A0056F7BE /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				BFF6A7391CA0037C00D0BE3B /* CityEntity.swift */,
 			);
 			name = Entity;
 			sourceTree = "<group>";
@@ -189,6 +198,14 @@
 				BFF6A7341C9FF87800D0BE3B /* MapViewController.swift */,
 			);
 			name = Map;
+			sourceTree = "<group>";
+		};
+		BFF6A7361C9FFDD400D0BE3B /* List */ = {
+			isa = PBXGroup;
+			children = (
+				BFF6A7371C9FFDE600D0BE3B /* ListViewController.swift */,
+			);
+			name = List;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,11 +345,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFF6A7291C9DF87600D0BE3B /* Global.swift in Sources */,
+				BFF6A73C1CA0051F00D0BE3B /* GetCitiesList.swift in Sources */,
 				BFF6A7271C9DF40800D0BE3B /* RegisterViewController.swift in Sources */,
 				BFF6A7301C9DF94C00D0BE3B /* RegisterValidationHelper.swift in Sources */,
 				BFF6A7321C9DF98C00D0BE3B /* String+Validation.swift in Sources */,
+				BFF6A73A1CA0037C00D0BE3B /* CityEntity.swift in Sources */,
 				BF1DC1C31C9DEA740056F7BE /* SignInViewController.swift in Sources */,
 				BF1DC1AA1C9DEA110056F7BE /* AppDelegate.swift in Sources */,
+				BFF6A7381C9FFDE600D0BE3B /* ListViewController.swift in Sources */,
 				BFF6A7351C9FF87800D0BE3B /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

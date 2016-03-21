@@ -8,6 +8,10 @@
 
 import Foundation
 
+struct API {
+	static let APIAddress = "http://maps.googleapis.com/maps/api/geocode/json?address=miasto"
+}
+
 struct Regex {
 	static let name = "^[[:alpha:] ,.'-]{2,20}$"
 	static let email = "^.+@([A-Za-z0-9-]+\\.)+[A-Za-z]{2}[A-Za-z]*$"

@@ -8,5 +8,7 @@ target 'Introducer' do
 	pod 'Crashlytics'
 	pod 'IQKeyboardManagerSwift'
 	pod 'GoogleMaps'
+	pod 'SwiftyJSON'
+	pod 'Alamofire', '~> 3.0'
 end
 

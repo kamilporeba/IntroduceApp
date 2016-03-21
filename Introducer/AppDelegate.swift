@@ -10,6 +10,7 @@ import UIKit
 import Fabric
 import Crashlytics
 import IQKeyboardManagerSwift
+import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -24,6 +25,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 		// IQKeyboardManagerSwift
 		IQKeyboardManager.sharedManager().enable = true
+        
+        // Google maps
+        GMSServices.provideAPIKey("AIzaSyCK4weiW-fzUs7kpk1YQYb24-U0nSLuGe0")
 
 		return true
 	}

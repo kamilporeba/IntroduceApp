@@ -7,5 +7,6 @@ target 'Introducer' do
 	pod 'Fabric'
 	pod 'Crashlytics'
 	pod 'IQKeyboardManagerSwift'
+	pod 'GoogleMaps'
 end
 
